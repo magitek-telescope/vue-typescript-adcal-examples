@@ -1,18 +1,28 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js + TypeScript App" />
+  <div>
+    <p>{{ count }}</p>
+    <button type="button" @click="increment">+</button>
   </div>
 </template>
 
 <script lang="ts">
 import Vue from 'vue'
-import HelloWorld from './components/HelloWorld.vue'
+import { State, AppStore } from '@/store'
+
+const store = new AppStore({
+  count: 0
+})
 
 export default Vue.extend({
-  name: 'app',
-  components: {
-    HelloWorld
+  methods: {
+    increment() {
+      this.$store.increment()
+    }
+  },
+  computed: {
+    count(): number {
+      return this.$store.state.count
+    }
   }
 })
 </script>
