@@ -15,6 +15,11 @@ https://qiita.com/potato4d/items/c9c0c8e674f20c85948a のために書いた(書�
 - vue-typescript-vuex-self-declare
   - 自分で declare を拡張して運用するサンプル
 
+## 今後の追加予定は？
+
+- vue-typescript-vuex-with-helper
+  - vuex-type-helper を使ったサンプル
+
 ## ライセンスは？
 
 全部 MIT (c) 2018 @potato4d
