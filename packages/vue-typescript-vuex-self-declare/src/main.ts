@@ -6,7 +6,7 @@ Vue.config.productionTip = false
 
 Object.defineProperty(Vue.prototype, '$state', {
   get(this: Vue) {
-    return this.$store.state;
+    return this.$store.state
   }
 })
 
